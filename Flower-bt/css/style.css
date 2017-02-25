@@ -1,0 +1,295 @@
+html{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+
+body{
+
+	position: relative;
+	background: url(../images/bg2.jpg) fixed;
+	-webkit-background-size: cover;
+	background-attachment: fixed;
+	/*background:  url(https://images.pexels.com/photos/66272/flower-plant-blossom-nature-66272.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb) black;
+	background-repeat: repeat-x, no-repeat;*/
+
+}
+
+h1{
+	color: #BA55D3;
+}
+
+.banner-logo img{
+	display: inline-block;
+	max-width: 100%;
+	margin: 5px auto;
+	position: relative;
+}
+.banner-warp{
+	margin: 0 auto;
+	/*border-top: 3px solid blue;*/
+	/*border-radius: 15px;*/
+	height: 50px;
+	/*width: 600px;*/
+	box-sizing: border-box;
+	padding: auto;
+}
+
+
+.banner-warp ul{
+	background: #0eaaf9;
+	list-style-type: none;
+	text-align: center;
+	border-radius: 10px;
+	padding-left: 0px: 
+}
+
+.banner-warp li{
+	color: #f1f1f1;
+	display: inline-block;
+	width: 45%;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+a{
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+
+
+
+img{
+	display: block;
+	margin: 5px auto;
+}
+
+.box.name {
+	margin: 10px auto;
+	/*max-width: 600px;*/
+}
+
+.name{
+	height: 40px;
+	padding: 5px auto;
+	/*background: #0eaaf9;*/
+	margin: 15px auto;
+	border-radius: 7px;
+	width: 500px;
+
+}
+
+.name h1{
+	text-transform: capitalize;
+	text-align: center;
+	animation: mymove 7s infinite;
+
+
+}
+
+@keyframes mymove{
+	0%   {background-color: #EF7126; color: #F9E559;	border-radius: 10px;}
+	25%  {background-color: #6F3662; color: #FFFFFF;	border-radius: 10px;}
+	50%  {background-color: #9F6164; color: #F8DEBD;	border-radius: 10px;}
+	75%  {background-color: #44B3C2; color: #FFFFFF;	border-radius: 10px;}
+	100% {background-color: #218C8D; color: #F9E559;	border-radius: 10px;}
+
+}
+
+.name-title{
+	text-align: center !important;
+	text-transform: capitalize  !important; 
+	margin: 5px auto;
+	padding-top: 10px;
+}
+
+.content{
+
+	padding: 5px;
+	margin:0 auto;
+
+	
+}
+
+.hoa{
+
+	margin:0 auto;
+	padding: 5px;
+}
+
+.hoa div{
+	float: left;
+	width: 33.3333%;
+	height: 250px;
+	padding: 5px;
+	object-fit: contain;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+
+.hoa img{
+/*	width: 33.3333333%;
+	height: 100%;
+	display: block;
+	float: left;
+	padding: 5px;
+	margin:0 auto;*/
+
+
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	/*	float: left;*/
+	/*padding: 5px;*/
+	margin:0 auto;
+/*	border: 3px solid #0eaaf9;
+	border-radius: 25px;
+	*/
+	opacity: 1;
+	
+}
+
+.hoaimg:hover img{
+	opacity: 0.5;
+}
+
+
+.signature {
+	max-width: 100%;
+	position: relative;
+	animation: fade 5s ease-in-out infinite;
+
+	opacity: 0;
+
+}
+.signature h3{
+	padding-left: 5%;
+	text-align: right;
+	text-transform: capitalize;
+	color: #3790ff;
+	
+}
+
+@keyframes fade{
+	from{right:0px;}
+	to{right:900px;}
+	50%{
+		opacity: 1;
+	}
+
+}
+
+.avatar{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+
+.avatar img{
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	margin: 10px auto;
+	border: 5px solid #fff;
+	border-radius: 50%;
+
+}
+
+
+.menu-avatar{
+	width:200px;
+	position: absolute;
+	top:595px;
+	left: -200px;
+	/*		border: 3px solid green;*/
+	border-radius: 5px;
+	margin: 0 auto;
+	padding: 50px auto;
+}
+
+.menu-box{
+	margin: 10px auto;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.menu-list{
+	padding: 10px;
+	width: 88%;
+	height: 88%;
+	margin: 0 auto;
+
+}
+
+
+
+.menu-list ul,.menu-list li{
+	list-style-type: none;
+	text-transform: uppercase;
+	margin: 10px auto;
+	padding: 0;
+	padding: 10px;
+
+}
+
+.menu-list ul{
+	background: #0eaaf9;
+	text-align: center;
+	border-radius: 10px;
+
+
+}
+
+.menu-list li{
+	color: #f1f1f1;
+	width: 100%;
+	height: 100%;
+	margin: 10px auto;
+}
+
+.menu-box{
+	position: relative;
+}
+
+
+
+.sub-menu{
+	display: none;
+	position: absolute;
+}
+
+
+.bttb{
+	width: 100px;
+	height: 100px;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+}
+
+.bttb img{
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
+/*transform*/
+
