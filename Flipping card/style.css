@@ -1,0 +1,74 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	overflow: scroll;
+	background-image: url('images/heartStoneWallPaper.jpg');
+}
+
+.main-body{
+}
+.main-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 50px;
+}
+
+
+
+
+
+.card {
+	position: relative;
+	display: -webkit-box !important;
+	display: -moz-fit-content !important;
+	display: table;
+	margin: 10px;
+}
+
+.front{
+	/*     position: absolute; */
+	/*   z-index: 1; */
+}
+.card .back{
+	transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front,.back ,img{
+	border-radius: 15px;
+}
+
+
+.card.flipped .back{
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.card.flipped .front{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card .front,.card .back{
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+.card img:hover,.flipped img {
+ -webkit-box-shadow:0 0 15px 5px rgba(200,240,240,.75);
+ -moz-box-shadow:0 0 15px 5px rgba(200,240,240,.75);
+ box-shadow:0 0 15px 5px rgba(200,240,240,.75)
+}
