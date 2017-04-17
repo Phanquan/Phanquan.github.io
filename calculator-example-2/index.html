@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>calc</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="background">
+		
+		<div id="result"></div>
+
+		<div id="main">
+			<div class="rows">
+				<button class="btn-style del-bg" id="delete">C</button>
+				<button value="back" class="btn-style num-bg back-btn" id="back">&#8701</button>
+				<button value="%" class="btn-style operator opera-bg fall-back">%</button>
+				<button value="+" class="btn-style opera-bg value align operator">+</button>
+			</div>
+			
+			<div class="rows">
+				<button value="7" class="btn-style num-bg num first-child">7</button>
+				<button value="8" class="btn-style num-bg num">8</button>
+				<button value="9" class="btn-style num-bg num">9</button>
+				<button value="-" class="btn-style opera-bg operator">-</button>
+			</div>
+			
+			<div class="rows">
+				<button value="4" class="btn-style num-bg num first-child">4</button>
+				<button value="5" class="btn-style num-bg num">5</button>
+				<button value="6" class="btn-style num-bg num">6</button>
+				<button value="*" class="btn-style opera-bg operator">x</button>
+			</div>
+			
+			<div class="rows">
+				<button value="1" class="btn-style num-bg num first-child">1</button>
+				<button value="2" class="btn-style num-bg num">2</button>
+				<button value="3" class="btn-style num-bg num">3</button>
+				<button value="/" class="btn-style opera-bg operator">/</button>
+			</div>
+			
+			<div class="rows">
+				<button value="0" class="btn-style num-bg ko" >0</button>
+				<button value="." class="btn-style num-bg period fall-back">.</button>
+				<button value="=" class="btn-style eqn align" id="eqn-bg" >=</button>
+			</div>
+			<div class="rows">
+				<button value="sqrt" class="btn-style num-bg specOperator ">x<sup>&#189;</sup></button>
+				<button value="power2" class="btn-style num-bg specOperator ">x<sup>2</sup></button>
+				<button value="power3" class="btn-style num-bg specOperator ">x<sup>3</sup></button>
+				<button value="factorial" class="btn-style num-bg specOperator ">n!</button>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
