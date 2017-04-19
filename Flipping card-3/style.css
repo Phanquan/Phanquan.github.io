@@ -1,0 +1,141 @@
+*{
+	box-sizing: border-box;
+}
+
+header>div{
+	margin-bottom: 50px;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	overflow: scroll;
+	background-image: url('images/heartStoneWallPaper.jpg');
+	position: absolute;
+	
+}
+
+.main-body{
+	padding: 0 20px;
+}
+
+.customProgeress{
+	padding: 10px;
+}
+.main-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	/*! padding: 50px; */
+}
+
+.card>div>img{
+	width: 225px;
+	
+}
+
+
+
+.card {
+	position: relative;
+	display: -webkit-box !important;
+	display: -moz-fit-content !important;
+	display: table;
+	margin: 10px;
+}
+
+.front{
+	/*     position: absolute; */
+	/*   z-index: 1; */
+}
+.card .back{
+	transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.front,.back ,img{
+	border-radius: 15px;
+}
+
+
+.card.flipped .back{
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.card.flipped .front{
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+.card .front,.card .back{
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+}
+.card img:hover,.flipped img {
+ -webkit-box-shadow:0 0 15px 5px rgba(200,240,240,.75);
+ -moz-box-shadow:0 0 15px 5px rgba(200,240,240,.75);
+ box-shadow:0 0 15px 5px rgba(200,240,240,.75)
+}
+
+
+
+.modal-content{
+	padding: 10px;
+}
+.game-mode>button{
+	width: 200px;
+	height: 100px;
+}
+.game-mode-title{
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+.game-mode-title>h3{
+	display: block;
+}
+.game-mode-container{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+/* 	padding: 20px; */
+}
+.modal-dialog{
+/* 	width: 500px !important; */
+}
+
+.game-over>button{
+	width: 200px;
+	height: 100px;
+	border: 0;
+}
+
+.victoryBlock{
+	display: none;
+	position: absolute;
+	z-index: 10;
+/*   top: 0; */
+	left: 0;
+	right: 0;
+	
+}
+.win{
+	display: flex;
+	flex-direction: column;
+}
+.win>img{
+	width: 750px;
+}
+.lose-image>img{
+	max-width: 100%;
+}

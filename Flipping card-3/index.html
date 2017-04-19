@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flipping Cards</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<div>
+			
+		</div>
+		<nav>
+			<div class="modal fade startModal" id="startGameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="game-mode-title">
+							<h3>Choose Your Game Mode</h3>
+						</div>
+						<div class="modal-body game-mode-container">
+							<div class="game-mode nomal">
+								<button class="btn btn-primary btn-choose" data-dismiss="modal" value="50">Normal</button>
+							</div>
+							<div class="game-mode hard">
+								<button class="btn btn-danger btn-choose" data-dismiss="modal" value="25">Hard</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal fade endModal" id="endGameModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="game-mode-title">
+							<h3>You Lose</h3>
+						</div>
+						<div class="lose-image">
+							<img src="images/laughingLoser.jpg">
+						</div>
+						<div class="modal-body game-mode-container game-over">
+							
+							<button class="btn btn-primary btn-replay" onclick="replay()">Replay</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+
+			
+		</nav>
+	</header>
+	
+
+
+	<article class="main-body">
+		<div class="victoryBlock">
+			<div class="game-mode-container game-over win">
+				<img src="images/victory.png">
+				<button class="btn btn-primary btn-replay" onclick="replay()">Replay</button>
+			</div>
+		</div>
+		<div class="customProgeress">
+			<div class="progress ">
+				<div class="progress-bar progress-bar-info " role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content">
+
+		</div>
+	</article>
+
+
+	<footer>
+		<audio id="backgroundMusic">
+			<source src="audio/background.mp3" type="audio/mpeg"/>
+		</audio>
+	</footer>
+
+	<script type="text/javascript" src="../jquery/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js.js"></script>
+</body>
+</html>
